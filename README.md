@@ -2,8 +2,8 @@
 
 ## CS5500 - Foundations of Software Engineering
 ![GitHub Light](https://brand.northeastern.edu/wp-content/uploads/4_BlackOnColor.png#gh-light-mode-onlyy)
-### Team Orca
-  - Fuen Cui, Yuchi Shi, Hao Zeng, Ziling Chen, Fanxing Yu
+### Author
+  - Fuen Cui
 
 ### Professor
   - Lash, Alexander
