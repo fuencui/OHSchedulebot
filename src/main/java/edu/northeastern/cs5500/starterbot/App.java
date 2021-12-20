@@ -2,20 +2,17 @@ package edu.northeastern.cs5500.starterbot;
 
 import static spark.Spark.*;
 
+import edu.northeastern.cs5500.starterbot.controller.DiscordIdController;
 import edu.northeastern.cs5500.starterbot.listeners.MessageListener;
-import edu.northeastern.cs5500.starterbot.model.registerList;
+import edu.northeastern.cs5500.starterbot.listeners.Welcome;
+import edu.northeastern.cs5500.starterbot.model.NEUUser;
 import edu.northeastern.cs5500.starterbot.repository.GenericRepository;
 import edu.northeastern.cs5500.starterbot.repository.MongoDBRepository;
 import edu.northeastern.cs5500.starterbot.service.MongoDBService;
-
-import java.util.ArrayList;
 import java.util.EnumSet;
 import javax.security.auth.login.LoginException;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
-import net.dv8tion.jda.api.interactions.commands.OptionType;
-import net.dv8tion.jda.api.interactions.commands.build.CommandData;
-import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.requests.restaction.CommandListUpdateAction;
 
@@ -34,42 +31,23 @@ public class App {
                     "The BOT_TOKEN environment variable is not defined.");
         }
 
-        MessageListener messageListener = new MessageListener();
         MongoDBService mongoDBService = new MongoDBService();
-        GenericRepository<registerList> registerListRepository = new MongoDBRepository<>(registerList.class, mongoDBService);
-        messageListener.setregisterListRepository(registerListRepository);
+        GenericRepository<NEUUser> userRepository =
+                new MongoDBRepository<NEUUser>(NEUUser.class, mongoDBService);
+
+        DiscordIdController discordIdController = new DiscordIdController(userRepository);
+
+        MessageListener messageListener = new MessageListener(discordIdController);
 
         JDA jda =
                 JDABuilder.createLight(token, EnumSet.noneOf(GatewayIntent.class))
                         .addEventListeners(messageListener)
+                        .enableIntents(GatewayIntent.GUILD_MEMBERS)
                         .build();
 
-        
-        if (registerListRepository.count() == 0){
-                registerList registerlist = new registerList();
-                registerlist.setNameList(new ArrayList<>());
-                registerListRepository.add(registerlist);
-        }
-        
-
+        jda.addEventListener(new Welcome());
         CommandListUpdateAction commands = jda.updateCommands();
-
-        commands.addCommands(
-                new CommandData("say", "Makes the bot say what you told it to say")
-                        .addOptions(
-                                new OptionData(
-                                                OptionType.STRING,
-                                                "content",
-                                                "What the bot should say")
-                                        .setRequired(true)),
-                new CommandData("register", "register a student by name")
-                        .addOptions(
-                        new OptionData(
-                                        OptionType.STRING,
-                                        "content",
-                                        "What is register UserName")
-                                .setRequired(true)),
-                new CommandData("time", "Display current time"));
+        commands.addCommands(messageListener.getCommandData());
         commands.queue();
 
         port(8080);
@@ -80,5 +58,4 @@ public class App {
                     return "{\"status\": \"OK\"}";
                 });
     }
-
 }

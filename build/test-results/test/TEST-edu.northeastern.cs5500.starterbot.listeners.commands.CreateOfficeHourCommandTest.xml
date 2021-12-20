@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-12-18T07:48:35" hostname="FuenCuis-MacBook-Air.local" time="0.004">
+  <properties/>
+  <testcase name="testOfficeHour()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" time="0.001"/>
+  <testcase name="testGetReplyByCreateMultipleOfficeHour()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testGetReplyWhenIsNotStaff()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testGetName()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testGetReplyByCreateSingleOfficeHour()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testGetReplyWithInvalidDay()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testListAfterCreateSingleOfficeHour()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testToTitleCase()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testGetCommandData()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CreateOfficeHourCommandTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-12-18T07:48:35" hostname="FuenCuis-MacBook-Air.local" time="0.004">
+  <properties/>
+  <testcase name="testEmptyInputData()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.001"/>
+  <testcase name="testCreateNonVaccineReport()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.0"/>
+  <testcase name="testNoInputData()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.0"/>
+  <testcase name="testCreateVaccineReport()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.0"/>
+  <testcase name="testGetCommandDataArgs1()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.0"/>
+  <testcase name="testGetCommandDataArgs2()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.0"/>
+  <testcase name="testGetCommandDataArgs3()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.0"/>
+  <testcase name="testIsVaccinated()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.0"/>
+  <testcase name="testGetName()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.001"/>
+  <testcase name="testCreateNonRegisteredUserReport()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.VaccinateCommandTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

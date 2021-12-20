@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-12-18T07:48:35" hostname="FuenCuis-MacBook-Air.local" time="0.238">
+  <properties/>
+  <testcase name="testGetReserveReplyNoTA()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.063"/>
+  <testcase name="testGetReserveReplyNoStaff()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testGetReserveReplyDuplicateOH()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.001"/>
+  <testcase name="testGetReply()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.004"/>
+  <testcase name="testCheckMatchingOH()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testCheckNoStaff()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testIsValidType()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testGetName()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testIsValidDayOfWeek()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testToTitleCase()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testGetCommandData()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.165"/>
+  <testcase name="testGetReplyValid()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testCheckDuplicateOfficeHour()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testOnSlashCommand()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <testcase name="testGetReplyVaccine()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.ReserveCommandTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

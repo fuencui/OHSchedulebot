@@ -8,31 +8,25 @@ import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
-import javax.inject.Inject;
-import javax.inject.Singleton;
-//import lombok.Getter;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
 
-@Singleton
 @Slf4j
 public class MongoDBService implements Service {
-    private MongoDatabase mongoDatabase;
+    @Getter private MongoDatabase mongoDatabase;
 
     static String getDatabaseURI() {
         ProcessBuilder processBuilder = new ProcessBuilder();
         final String databaseURI = processBuilder.environment().get("GROUP_MONGODB_URL");
-        return databaseURI;
-        
-        /*if (databaseURI != null) {
-            return databaseURI;
+        // The main bot token is "GROUP_MONGODB_URL"
+        if (databaseURI == null) {
+            throw new RuntimeException("Environment variable GROUP_MONGODB_URL must be defined!");
         }
-        return null; // connect to localhost by default
-        */
+        return databaseURI;
     }
 
-    @Inject
     public MongoDBService() {
         CodecRegistry codecRegistry =
                 fromRegistries(
@@ -50,18 +44,9 @@ public class MongoDBService implements Service {
         MongoClient mongoClient = MongoClients.create(mongoClientSettings);
         mongoDatabase = mongoClient.getDatabase(connectionString.getDatabase());
     }
-    
-
-    public MongoDBService(MongoDatabase mongoDatabase){
-        this.mongoDatabase = mongoDatabase;
-    }
-
-    public MongoDatabase getMongoDatabase() {
-        return this.mongoDatabase;
-    }
 
     @Override
     public void register() {
-        
+        log.info("MongoDBService > register");
     }
 }

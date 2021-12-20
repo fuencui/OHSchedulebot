@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-12-18T07:48:35" hostname="FuenCuis-MacBook-Air.local" time="0.002">
+  <properties/>
+  <testcase name="testGetEntireWeekReplyForEmptyListGiven()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.0"/>
+  <testcase name="testGetEntireWeekReply()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.0"/>
+  <testcase name="testGetName()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.0"/>
+  <testcase name="testGetSingleDayReply()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.0"/>
+  <testcase name="testGetReplyForNonRegisteredUser()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.0"/>
+  <testcase name="testGetReplyForUserWithNoOfficeHour()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.0"/>
+  <testcase name="testGetSingleDayReplyForEmptyListGiven()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.001"/>
+  <testcase name="testToTitleCase()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.0"/>
+  <testcase name="testGetCommandData()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.0"/>
+  <testcase name="testGetReplyForInvaliedDayOfWeek()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.GetScheduleCommandTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

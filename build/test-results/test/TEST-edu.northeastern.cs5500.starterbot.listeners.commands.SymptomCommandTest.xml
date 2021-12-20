@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-12-18T07:48:35" hostname="FuenCuis-MacBook-Air.local" time="0.002">
+  <properties/>
+  <testcase name="testNoInputData()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" time="0.0"/>
+  <testcase name="testCreateNonRegisteredUserReportSymptomatic()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" time="0.0"/>
+  <testcase name="getName()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" time="0.0"/>
+  <testcase name="testCreateSymptomaticReport()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" time="0.0"/>
+  <testcase name="getCommandDataArgs1()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" time="0.0"/>
+  <testcase name="getCommandDataArgs2()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" time="0.0"/>
+  <testcase name="getCommandDataArgs3()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" time="0.001"/>
+  <testcase name="createNonSymptomaticReport()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" time="0.0"/>
+  <testcase name="getReply()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.SymptomCommandTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

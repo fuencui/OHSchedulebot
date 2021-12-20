@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-12-18T07:48:35" hostname="FuenCuis-MacBook-Air.local" time="0.007">
+  <properties/>
+  <testcase name="testStaffUsersGetAnError()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testCancelOfficeHourEmbed()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" time="0.001"/>
+  <testcase name="testGetName()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testUnregistredUserGetsAnError()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" time="0.004"/>
+  <testcase name="testToTitleCase()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testGetCommandData()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testGetCommandDataIsConsistent()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testInvalidDayGetsAnError()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" time="0.0"/>
+  <testcase name="testValidInputs()" classname="edu.northeastern.cs5500.starterbot.listeners.commands.CancelOfficeHourCommandTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
